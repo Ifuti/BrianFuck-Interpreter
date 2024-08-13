@@ -15,7 +15,7 @@ void interpret(char *instruction)
 		case '+':tape[head]++;break;
 		case '-':tape[head]--;break;
 		case '.':putchar(tape[head]);fflush(stdout);break;
-		case ',':tape[head] = getchar();fflush(stdout);break;
+		case ',':tape[head] = getchar();break;
 		case '[':
 			temp = instruction;
 			for(loop=1;loop && *instruction;instruction++)
